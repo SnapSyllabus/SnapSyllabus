@@ -1,148 +1,47 @@
-  
-<!-- 
-    Credit goes to the Ruby on Rails team for this page 
-    has been heavily based on the default Rails page that is 
-    built with a scaffolded application.
+<html>
+	<head>
+		<title>SnapSyllabus</title>
+		<link rel="stylesheet" type="text/css" href="<% request.uri_base %>/css/style.css">
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	
+	<body>
+		<table class="majorLayout"><tr><td>
+					<p class=mainTitle>SnapSyllabus
 
-    Thanks a lot to them for their work.
-
-    See Ruby on Rails if you want a kickass framework in Ruby:
-    http://www.rubyonrails.org/
--->
-
-<div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Join the community</h3>
-            <ul class="links">
-
-              <li><a href="http://perldancer.org/">PerlDancer</a></li>
-              <li><a href="http://twitter.com/PerlDancer/">Official Twitter</a></li>
-              <li><a href="https://github.com/PerlDancer/Dancer/">GitHub Community</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <h3>Browse the documentation</h3>
-
-            <ul class="links">
-              <li><a
-              href="http://search.cpan.org/dist/Dancer/lib/Dancer/Introduction.pod">Introduction</a></li>
-              <li><a href="http://search.cpan.org/dist/Dancer/lib/Dancer/Cookbook.pod">Cookbook</a></li>
-              <li><a href="http://search.cpan.org/dist/Dancer/lib/Dancer/Deployment.pod">Deployment Guide</a></li>
-              <li><a
-              href="http://search.cpan.org/dist/Dancer/lib/Dancer/Tutorial.pod"
-              title="a tutorial to build a small blog engine with Dancer">Tutorial</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Your application's environment</h3>
-
-            <ul>
-                <li>Location: <code>/home/zaki/sw_projects/SnapSyllabus/SnapSyllabus/SnapSyllabus</code></li>
-                <li>Template engine: <code><% settings.template %></code></li>
-                <li>Logger: <code><% settings.logger %></code></li>
-                <li>Environment: <code><% settings.environment %></code></li>
-            </ul>
-
-          </li>
-        </ul>
-
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Perl is dancing</h1>
-          <h2>You&rsquo;ve joined the dance floor!</h2>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get dancing:</h2>
-                    
-          <h3><a href="#" id="about_env_link">About your application's environment</a></h3>
-
-          <div id="about-content" style="display: none;">
-            <table>
-                <tbody>
-                <tr>
-                    <td>Perl version</td>
-                    <td><tt><% perl_version %></tt></td>
-                </tr>
-                <tr>
-                    <td>Dancer version</td>
-                    <td><tt><% dancer_version %></tt></td>
-                </tr>
-                <tr>
-                    <td>Backend</td>
-                    <td><tt><% settings.apphandler %></tt></td>
-                </tr>
-                <tr>
-                    <td>Appdir</td>
-                    <td><tt>/home/zaki/sw_projects/SnapSyllabus/SnapSyllabus/SnapSyllabus</tt></td>
-                </tr>
-                <tr>
-                    <td>Template engine</td>
-                    <td><tt><% settings.template %></tt></td>
-                </tr>
-                <tr>
-                    <td>Logger engine</td>
-                    <td><tt><% settings.logger %></tt></td>
-                </tr>
-                <tr>
-                    <td>Running environment</td>
-                    <td><tt><% settings.environment %></tt></td>
-                </tr>
-                </tbody>
-            </table>
-          </div>
-
-    <script type="text/javascript">
-    $('#about_env_link').click(function() {
-        $('#about-content').slideToggle('fast', function() {
-            // ok
-        });
-        return( false );
-    });
-    </script>
-
-
-          <ol>          
-            <li>
-              <h2>Tune your application</h2>
-
-              <p>
-              Your application is configured via a global configuration file,
-              <tt>config.yml</tt> and an "environment" configuration file,
-              <tt>environments/development.yml</tt>. Edit those files if you
-              want to change the settings of your application.
-              </p>
-            </li>
-
-            <li>
-              <h2>Add your own routes</h2>
-
-              <p>
-              The default route that displays this page can be removed,
-              it's just here to help you get started. The template used to
-              generate this content is located in 
-              <code>views/index.tt</code>.
-              You can add some routes to <tt>lib/SnapSyllabus.pm</tt>. 
-              </p>
-            </li>
-
-            <li>
-                <h2>Enjoy web development again</h2>
-
-                <p>
-                Once you've made your changes, restart your standalone server
-                (bin/app.pl) and you're ready to test your web application.
-                </p>
-            </li>
-
-          </ol>
-        </div>
-      </div>
-    </div>
+					<table class="tableContent">
+						<tr>
+							<td colspan=3>
+								<p class=tableHeaderRow>How it Works</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33%">Upload your syllabus</td>
+							<td width="33%">Dates and events are automatically extracted using the Super-Zaki-Algorithm using the Least Sleep Regression Model</td>
+							<td width="33%">Export the dates to the calendar of your choice</td>
+						</tr>
+					</table>
+					<center>
+						<form enctype="multipart/form-data" action="uploader" method="POST">
+							<input type='file'>
+							<br>
+							<br>
+							<input type="Submit" value="Upload" onclick="Submit" />
+							</input>
+							<div>
+							</div>
+		
+		
+		
+		
+       <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Snap-Syllabus/571054982929312"
+        scrolling="no" frameborder="0"
+        style="border:none; width:450px; height:80px"></iframe>
+		
+		</center>
+		</td></tr></table>
+	</body>
+	
+</html>

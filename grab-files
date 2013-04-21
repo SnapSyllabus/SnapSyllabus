@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# ../snap/index.html
+# -> public/index.html
+# ../snap/resources/stylesheet.css
+# -> public/css/style.css
+
+#cp -p ../snap/index.html public/404.html
+#cp -p ../data/
