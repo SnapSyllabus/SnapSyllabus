@@ -1,47 +1,26 @@
-<html>
-	<head>
-		<title>SnapSyllabus</title>
-		<link rel="stylesheet" type="text/css" href="<% request.uri_base %>/css/style.css">
-		<script type="text/javascript">
-			
-		</script>
-	</head>
-	
-	<body>
-		<table class="majorLayout"><tr><td>
-					<p class=mainTitle>SnapSyllabus
-
-					<table class="tableContent">
-						<tr>
-							<td colspan=3>
-								<p class=tableHeaderRow>How it Works</p>
-							</td>
-						</tr>
-						<tr>
-							<td width="33%">Upload your syllabus</td>
-							<td width="33%">Dates and events are automatically extracted using the Super-Zaki-Algorithm using the Least Sleep Regression Model</td>
-							<td width="33%">Export the dates to the calendar of your choice</td>
-						</tr>
-					</table>
-					<center>
-						<form enctype="multipart/form-data" action="uploader" method="POST">
-							<input type='file'>
-							<br>
-							<br>
-							<input type="Submit" value="Upload" onclick="Submit" />
-							</input>
-							<div>
-							</div>
-		
-		
-		
-		
-       <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Snap-Syllabus/571054982929312"
-        scrolling="no" frameborder="0"
-        style="border:none; width:450px; height:80px"></iframe>
-		
-		</center>
-		</td></tr></table>
-	</body>
-	
-</html>
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+      <form action="upload" method="POST">
+        <div class="span4">
+          <h2>Upload your syllabus</h2>
+          <p>Simply click the button below and choose the PDF, text document, or picture with the date and event information. </p>
+          <p><input type='file'></p>
+        </div>
+        <div class="span4">
+          <h2>Push the button below</h2>
+          <p>Wait a few moments while our magical code does its work.</p>
+		  <br>
+		  <input type="submit" value="Push this button" />
+       </div>
+	</form>
+        <div class="span4">
+          <h2>Your calendar is updated</h2>
+		  <p>It's just that easy.</p>
+		  	  		  
+		  		
+		   </div>
+		   <br>
+		   <br>
+		   <br>
+		   
+		  </div>

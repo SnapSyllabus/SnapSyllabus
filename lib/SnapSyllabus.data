@@ -1,0 +1,310 @@
+\ [
+    [0]  {
+        Date      {
+            Day     19,
+            Month   1,
+            Year    2013
+        },
+        desc      "Sat January 19
+First day of class",
+        linebeg   3887,
+        matched   "Sat January 19",
+        pos       3888
+    },
+    [1]  {
+        Date      {
+            Day     30,
+            Month   1,
+            Year    2013
+        },
+        desc      "Wed January 30
+Last Day to Drop without receiving a grade",
+        linebeg   3921,
+        matched   "Wed January 30",
+        pos       3922
+    },
+    [2]  {
+        Date      {
+            Day     9,
+            Month   2,
+            Year    2013
+        },
+        desc      "Sat February 9
+Exam 1",
+        linebeg   3979,
+        matched   "Sat February 9",
+        pos       3980
+    },
+    [3]  {
+        Date      {
+            Day     9,
+            Month   3,
+            Year    2013
+        },
+        desc      "Sat March 9
+Exam 2",
+        linebeg   4001,
+        matched   "Sat March 9",
+        pos       4002
+    },
+    [4]  {
+        Date      {
+            Day     16,
+            Month   3,
+            Year    2013
+        },
+        desc      "Sat March 16
+Spring Break",
+        linebeg   4020,
+        matched   "Sat March 16",
+        pos       4021
+    },
+    [5]  {
+        Date      {
+            Day     27,
+            Month   3,
+            Year    2013
+        },
+        desc      "Wed March 27
+Last Day to Drop with a “W”
+Sat April 6
+Exam 3",
+        linebeg   4046,
+        matched   "Wed March 27",
+        pos       4047
+    },
+    [6]  {
+        Date      {
+            Day     4,
+            Month   5,
+            Year    2013
+        },
+        desc      "Sat May 4
+Final Exam (in class)
+Drop Policy It is the student’s responsibility to know published drop dates and to act on those dates if necessary or
+desired.
+Course Evaluations",
+        linebeg   4110,
+        matched   "Sat May 4",
+        pos       4111
+    },
+    [7]  {
+        Date      {
+            Day     5,
+            Month   5,
+            Year    2013
+        },
+        desc      "Final Exam – May 5
+25 points
+Total Possible
+100 points
+Less Deducted Points for Non Excused Non Attendance",
+        linebeg   6470,
+        matched   " May 5",
+        pos       6485
+    },
+    [8]  {
+        Date      {
+            Day     19,
+            Month   1,
+            Year    2013
+        },
+        desc      "Week 1 (1/19/2013) Lecture & Lab
+ Introduction to class
+ Class expectations (Roles and Responsibilities)
+ Syl abus review  Introduction to the industry
+4",
+        linebeg   6829,
+        matched   "1/19/2013",
+        pos       6838
+    },
+    [9]  {
+        Date      {
+            Day     26,
+            Month   1,
+            Year    2013
+        },
+        desc      "Week 2 (1/26/2013) Lecture & Lab
+ Industry Overview
+ Systems Overview
+ Market Data  Establish Teams",
+        linebeg   6996,
+        matched   "1/26/2013",
+        pos       7005
+    },
+    [10] {
+        Date      {
+            Day     2,
+            Month   2,
+            Year    2013
+        },
+        desc      "Week 3 (2/2/2013) Lecture & Lab
+ Physical Trading
+ Implementing ETRMs",
+        linebeg   7108,
+        matched   "2/2/2013",
+        pos       7117
+    },
+    [11] {
+        Date      {
+            Day     9,
+            Month   2,
+            Year    2013
+        },
+        desc      "Week 4 (2/9/2013)
+ Discussion or Speaker
+  EXAM 1",
+        linebeg   7184,
+        matched   "2/9/2013",
+        pos       7193
+    },
+    [12] {
+        Date      {
+            Day     16,
+            Month   2,
+            Year    2013
+        },
+        desc      "Week 5 (2/16/2013) Lecture & Lab
+ Financial Trading  Implementation Key Success Factors",
+        linebeg   7240,
+        matched   "2/16/2013",
+        pos       7249
+    },
+    [13] {
+        Date      {
+            Day     23,
+            Month   2,
+            Year    2013
+        },
+        desc      "Week 6 (2/23/2013) Lecture & Lab
+ Storage and Imbalances  The importance of testing",
+        linebeg   7334,
+        matched   "2/23/2013",
+        pos       7343
+    },
+    [14] {
+        Date      {
+            Day     2,
+            Month   3,
+            Year    2013
+        },
+        desc      "Week 7 (3/2/2013) Lecture & Lab
+ Processing  Maintaining your ETRM system
+5",
+        linebeg   7424,
+        matched   "3/2/2013",
+        pos       7433
+    },
+    [15] {
+        Date      {
+            Day     9,
+            Month   3,
+            Year    2013
+        },
+        desc      "Week 8 (3/9/2013)
+ Discussion or Speaker
+  EXAM 2",
+        linebeg   7507,
+        matched   "3/9/2013",
+        pos       7516
+    },
+    [16] {
+        Date      {
+            Day     16,
+            Month   3,
+            Year    2013
+        },
+        desc      "Week 9 (3/16/2013)
+Spring Break",
+        linebeg   7563,
+        matched   "3/16/2013",
+        pos       7572
+    },
+    [17] {
+        Date      {
+            Day     23,
+            Month   3,
+            Year    2013
+        },
+        desc      "Week 10 (3/23/2013) Lecture & Lab
+ Scheduling  Understanding the ETRM business model",
+        linebeg   7595,
+        matched   "3/23/2013",
+        pos       7605
+    },
+    [18] {
+        Date      {
+            Day     30,
+            Month   3,
+            Year    2013
+        },
+        desc      "Week 11 (3/30/2013) Lecture & Lab
+ System Controls and Compliance",
+        linebeg   7686,
+        matched   "3/30/2013",
+        pos       7696
+    },
+    [19] {
+        Date      {
+            Day     6,
+            Month   4,
+            Year    2012
+        },
+        desc      "Week 12 (4/6/2012) Lecture & Lab
+ Risk and Credit  Regulatory Reporting and Compliance",
+        linebeg   7755,
+        matched   "4/6/2012",
+        pos       7765
+    },
+    [20] {
+        Date      {
+            Day     13,
+            Month   4,
+            Year    2013
+        },
+        desc      "Week 13 (4/13/2013)
+ Discussion or Speaker
+  EXAM 3",
+        linebeg   7848,
+        matched   "4/13/2013",
+        pos       7858
+    },
+    [21] {
+        Date      {
+            Day     20,
+            Month   4,
+            Year    2013
+        },
+        desc      "Week 14 (4/20/2013) Lecture & Lab
+ Accounting Close  Audit
+6",
+        linebeg   7906,
+        matched   "4/20/2013",
+        pos       7916
+    },
+    [22] {
+        Date      {
+            Day     27,
+            Month   4,
+            Year    2013
+        },
+        desc      "Week 15 (4/27/2013) Lecture & Lab
+ Systems Overview",
+        linebeg   7974,
+        matched   "4/27/2013",
+        pos       7984
+    },
+    [23] {
+        Date      {
+            Day     4,
+            Month   5,
+            Year    2013
+        },
+        desc      "Week 16 (5/4/2013)
+Final Exam
+7",
+        linebeg   8029,
+        matched   "5/4/2013",
+        pos       8039
+    }
+]

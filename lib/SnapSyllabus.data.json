@@ -1,0 +1,120 @@
+{
+	"Date": "01/19/2013",
+	"Text": "Sat January 19 First day of class",
+	"VEvent": "test"
+},
+{
+	"Date": "01/30/2013",
+	"Text": "Wed January 30 Last Day to Drop without receiving a grade",
+	"VEvent": "test"
+},
+{
+	"Date": "01/30/2013",
+	"Text": "Sat February 9 Exam 1",
+	"VEvent": "test"
+},
+{
+	"Date": "03/09/2013",
+	"Text": "Sat March 9 Exam 2",
+	"VEvent": "test"
+},
+{
+	"Date": "03/16/2013",
+	"Text": "Sat March 16 Spring Break",
+	"VEvent": "test"
+},
+{
+	"Date": "03/27/2013",
+	"Text": "Wed March 27 Last Day to Drop with a “W” Sat April 6 Exam 3",
+	"VEvent": "test"
+},
+{
+	"Date": "05/04/2013",
+	"Text": "Sat May 4 Final Exam (in class) Drop Policy It is the student’s responsibility to know published drop dates and to act on those dates if necessary or desired.  Course Evaluations",
+	"VEvent": "test"
+},
+{
+	"Date": "05/05/2013",
+	"Text": "Final Exam – May 5 25 points Total Possible 100 points Less Deducted Points for Non Excused Non Attendance",
+	"VEvent": "test"
+},
+{
+	"Date": "01/19/2013",
+	"Text": "Week 1 (1/19/2013) Lecture & Lab  Introduction to class  Class expectations (Roles and Responsibilities)  Syl abus review  Introduction to the industry 4",
+	"VEvent": "test"
+},
+{
+	"Date": "01/26/2013",
+	"Text": "Week 2 (1/26/2013) Lecture & Lab  Industry Overview  Systems Overview  Market Data  Establish Teams",
+	"VEvent": "test"
+},
+{
+	"Date": "02/02/2013",
+	"Text": "Week 3 (2/2/2013) Lecture & Lab  Physical Trading  Implementing ETRMs",
+	"VEvent": "test"
+},
+{
+	"Date": "02/09/2013",
+	"Text": "Week 4 (2/9/2013)  Discussion or Speaker   EXAM 1",
+	"VEvent": "test"
+},
+{
+	"Date": "02/16/2013",
+	"Text": "Week 5 (2/16/2013) Lecture & Lab  Financial Trading  Implementation Key Success Factors",
+	"VEvent": "test"
+},
+{
+	"Date": "02/23/2013",
+	"Text": "Week 6 (2/23/2013) Lecture & Lab  Storage and Imbalances  The importance of testing",
+	"VEvent": "test"
+},
+{
+	"Date": "03/02/2013",
+	"Text": "Week 7 (3/2/2013) Lecture & Lab  Processing  Maintaining your ETRM system 5",
+	"VEvent": "test"
+},
+{
+	"Date": "03/09/2013",
+	"Text": "Week 8 (3/9/2013)  Discussion or Speaker   EXAM 2",
+	"VEvent": "test"
+},
+{
+	"Date": "03/16/2013",
+	"Text": "Week 9 (3/16/2013) Spring Break",
+	"VEvent": "test"
+},
+{
+	"Date": "03/23/2013",
+	"Text": "Week 10 (3/23/2013) Lecture & Lab  Scheduling  Understanding the ETRM business model",
+	"VEvent": "test"
+},
+{
+	"Date": "03/30/2013",
+	"Text": "Week 11 (3/30/2013) Lecture & Lab  System Controls and Compliance",
+	"VEvent": "test"
+},
+{
+	"Date": "04/06/2012",
+	"Text": "Week 12 (4/6/2012) Lecture & Lab  Risk and Credit  Regulatory Reporting and Compliance",
+	"VEvent": "test"
+},
+{
+	"Date": "04/13/2013",
+	"Text": "Week 13 (4/13/2013)  Discussion or Speaker   EXAM 3",
+	"VEvent": "test"
+},
+{
+	"Date": "04/20/2013",
+	"Text": "Week 14 (4/20/2013) Lecture & Lab  Accounting Close  Audit 6",
+	"VEvent": "test"
+},
+{
+	"Date": "04/27/2013",
+	"Text": "Week 15 (4/27/2013) Lecture & Lab  Systems Overview",
+	"VEvent": "test"
+},
+{
+	"Date": "05/04/2013",
+	"Text": "Week 16 (5/4/2013) Final Exam 7",
+	"VEvent": "test"
+}

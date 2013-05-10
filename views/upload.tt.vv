@@ -1,0 +1,4 @@
+
+<form>
+<input type="button" value="Add to my calendar" onclick="load('https://www.google.com/calendar/render?tab=mc'); return false;">
+</form>

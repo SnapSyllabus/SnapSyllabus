@@ -1,0 +1,42 @@
+<script type="text/javascript">
+function load(url)
+{
+	window.open(url,"_self") ;
+}
+
+function EventList() {
+	var data = <% data %>
+
+	var re;
+	re += "<table border=1>";
+	var box = new Array();
+
+	for(x=0; x<data.EventData.length; x++)
+	{
+		re += "<tr>";
+		re += "<td>" +data.EventData[x].Text + "</td>";
+		re += "<td>" + data.EventData[x].Date + "</td>";
+		re += "<td><input value="true" type='checkbox' name='" + x + "'> </td>";
+		re += "</tr>";
+		box[x]=true;
+	}
+	re+= "</table>";
+	$('div.first').replaceWith(re);
+}
+</script>
+</head>
+
+<body>
+
+<% table %>
+
+<div class="container">
+	<div class="inner first"></div>
+</div>
+
+<br/>
+<p style="margin: 0" align="center">
+<a class="button" href="https://www.google.com/calendar/render?tab=mc">Add to my calendar</a>
+</p>
+
+
