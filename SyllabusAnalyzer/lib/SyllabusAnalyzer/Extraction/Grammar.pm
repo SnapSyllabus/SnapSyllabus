@@ -116,8 +116,8 @@ no Regexp::Grammars;
 has parser => ( is => 'lazy', builder => 1 );
 
 sub extract {
-	my ($self, $input) = @_;
-	#$self->parser->parse( $input );
+    my ($self, $input) = @_;
+    #$self->parser->parse( $input );
     my $events;
     while($input =~ /$grammar/g) {
         my $h = \%/;
@@ -125,6 +125,7 @@ sub extract {
         $h->{linebeg} = rindex($input, "\n", $h->{pos});
         $h->{linebeg} = $h->{linebeg} == -1 ? 0 : $h->{linebeg};
         $h->{matched} = $&;
+        use DDP; p $h;
         push @$events, $h;
     }
     my $filtered_events;
