@@ -1,0 +1,7 @@
+#!/usr/bin/env perl
+
+use FindBin;
+BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
+
+use aliased 'SyllabusAnalyzer::App' => 'App';
+App->run(\@ARGV);

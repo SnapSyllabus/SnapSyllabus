@@ -32,21 +32,23 @@ sub run_pdftohtml_text {
 	my $stripped = $hs->parse( $self->html );
 	$hs->eof;
 	$stripped =~ s,\xa0, ,g; # nsbp
+	use DDP; p $stripped;
 	return $stripped;
 }
 
 sub run_pdftohtml {
 	my ($self, $data) = @_;
-	my ($out);
-	my $tmp = File::Temp->new();
+	my ($out, $err);
+	my $tmp = File::Temp->new( SUFFIX => '.pdf' );
 
-	write_file( $tmp->filename, $data );
+	write_file( $tmp->filename, {binmode => ':raw'}, $data );
 	my $html_file = $tmp->filename . ".html";
 
-	my @cmd = ( 'pdftohtml', '-i', '-noframes', $tmp->filename );
-	run3 \@cmd, \undef, \undef, \undef or die "pdftotext: $?";
+	my @cmd = ( 'pdftohtml', '-i', '-noframes', $tmp->filename, $html_file );
+	run3 \@cmd, \undef, \undef, \$err or die "pdftotext: $?";
+	print "$err"; # TODO logging
 
-	$out = read_file( $html_file );
+	$out = read_file( $html_file ) or die "could not read output of pdftohtml: $!";
 	unlink $html_file;
 	#$out =~ s,\x{F0B7}|\x{F02D},foobar,g; # symbol font bullets
 	#$out =~ s,\x{F0B7}|\x{F02D},foobar,g; # symbol font bullets
