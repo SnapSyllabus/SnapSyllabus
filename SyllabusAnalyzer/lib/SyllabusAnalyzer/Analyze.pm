@@ -12,10 +12,18 @@ use aliased 'SyllabusAnalyzer::Format::PDF' => 'Format::PDF';
 use aliased 'SyllabusAnalyzer::Format::Text' => 'Format::Text';
 
 use aliased 'SyllabusAnalyzer::Extraction::Grammar' => 'Extraction::Grammar';
+use aliased 'SyllabusAnalyzer::Calendar' => 'Calendar';
+
+has extraction_strategy => ( is => 'rw', default => sub {
+	my ($self) = @_;
+	Extraction::Grammar->new( calendar => $self->calendar );
+});
+
+has calendar => ( is => 'lazy', builder => 1 );
 
 sub analyze {
 	my ($self, $format) = @_;
-	my $calendar = Extraction::Grammar->extract($format->text);
+	$self->extraction_strategy->extract($format->text);
 }
 
 sub analyze_text {
@@ -39,6 +47,10 @@ sub analyze_file {
 		my $data = read_file( $filename, { binmode => ':raw' } );
 		$self->analyze_pdf($data);
 	}
+}
+
+sub _build_calendar {
+	return Calendar->new();
 }
 
 1;

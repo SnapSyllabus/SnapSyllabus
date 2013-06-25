@@ -32,7 +32,6 @@ sub run_pdftohtml_text {
 	my $stripped = $hs->parse( $self->html );
 	$hs->eof;
 	$stripped =~ s,\xa0, ,g; # nsbp
-	use DDP; p $stripped;
 	return $stripped;
 }
 
@@ -48,10 +47,12 @@ sub run_pdftohtml {
 	run3 \@cmd, \undef, \undef, \$err or die "pdftotext: $?";
 	print "$err"; # TODO logging
 
-	$out = read_file( $html_file ) or die "could not read output of pdftohtml: $!";
+	$out = read_file( $html_file, { binmode => ':utf8' } ) or die "could not read output of pdftohtml: $!";
 	unlink $html_file;
-	#$out =~ s,\x{F0B7}|\x{F02D},foobar,g; # symbol font bullets
-	#$out =~ s,\x{F0B7}|\x{F02D},foobar,g; # symbol font bullets
+	#$out =~ s,\x{F0B7},\x{C2},sg; # symbol font bullets
+	#$out =~ s,\x{F02D},\x{C2},sg; # symbol font bullets
+	#$out =~ s,[\x{F0B7}\x{F02D}],\x{C2},msg; # symbol font bullets
+	$out =~ s,[\N{U+F0B7}\N{U+F02D}],\x{2014},umsg; # symbol font bullets
 	return $out;
 }
 

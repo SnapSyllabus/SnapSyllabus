@@ -7,6 +7,8 @@ use Moo;
 use DateTime;
 use DateTime::Duration;
 
+with 'SyllabusAnalyzer::ExtractionStrategyRole';
+
 my $this_year = DateTime->now->year;
 my $next_year = DateTime->now->add_duration( DateTime::Duration->new ( years => 1 ) );
 
@@ -125,7 +127,7 @@ sub extract {
         $h->{linebeg} = rindex($input, "\n", $h->{pos});
         $h->{linebeg} = $h->{linebeg} == -1 ? 0 : $h->{linebeg};
         $h->{matched} = $&;
-        use DDP; p $h;
+        #use DDP; p $h;
         push @$events, $h;
     }
     my $filtered_events;
@@ -154,8 +156,12 @@ sub extract {
         $this_event->{desc} = $sub_to_next;
         push @$filtered_events, $this_event;
     }
-    use DDP; p $filtered_events;
-    undef;
+    #use DDP; p $filtered_events;
+    for my $event (@$filtered_events) {
+	    my $date = $event->{Date};
+	    my $dt = DateTime->new( year => $date->{Year}, month => $date->{Month}, day => $date->{Day} );
+	    $self->calendar->add_event( $dt, $event->{desc});
+    }
 }
 
 sub number_of_lines {

@@ -4,22 +4,29 @@ use strict;
 use warnings;
 use Moo;
 use Data::ICal::DateTime;
-use Tie::RefHash::Weak;
+use Tie::RefHash;
 
-has _events => ( is => 'lazy', builder => 1 );
+has _events => ( is => 'rw', builder => 1 );
 
 sub add_event {
 	my ($self, $date, $info) = @_;
 	push @{ $self->_events->{$date} }, $info;
 }
 
-sub get_ical {
-	# TODO
+sub days {
+	my ($self) = @_;
+	sort keys $self->_events;
 }
 
-sub _build_events {
+sub get_info {
+	my ($self, $date) = @_;
+	$self->_events->{$date};
+}
+
+
+sub _build__events {
 	my %h = ();
-	tie %h, 'Tie::RefHash::Weak';
+	tie %h, 'Tie::RefHash';
 	return \%h;
 }
 
