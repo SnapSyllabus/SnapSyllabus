@@ -26,5 +26,10 @@ show_errors: 1
 # OR TINY KITTENS SHALL DIE WITH LOTS OF SUFFERING
 auto_reload: 0
 
-
-
+plack_middlewares:
+  -
+    - "+Dancer::Middleware::Rebase"
+    - base
+    - "http://snap-dev.enetdown.org"
+    - strip
+    - 1
