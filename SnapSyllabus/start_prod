@@ -1,3 +1,5 @@
 #!/bin/sh
 export PLACK_ENV="production"
+CURDIR=`dirname "$0"`
+cd "$CURDIR"
 plackup --port 8585 ./bin/app.pl

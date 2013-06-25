@@ -2,7 +2,10 @@ package SnapSyllabus;
 use Dancer ':syntax';
 
 use FindBin;
-use lib "$FindBin::Bin/../SyllabusAnalyzer/lib";
+use lib "$FindBin::Bin/../../SyllabusAnalyzer/lib";
+
+use SyllabusAnalyzer::Analyze;
+use SyllabusAnalyzer::Calendar::RenderHTMLTable;
 
 set 'session'      => 'Simple';
 set 'template'      => 'template_toolkit';
@@ -13,10 +16,29 @@ get '/' => sub {
 };
 
 post '/upload' => sub {
-	my $upload = request->uploads;
-	#use DDP; p $upload;
-	my $j = join ", ", keys $upload;
-	#my $filename = $upload->tempname;
+	my $upload = request->uploads()->{upload};
+	use DDP; p $upload;
+	my $filename = $upload->tempname;
+	use DDP; p $filename;
+	my $sa = SyllabusAnalyzer::Analyze->new();
+	$sa->analyze_file($filename);
+	use DDP; p $sa;
+	use DDP; p $sa->extraction_strategy->calendar;
+	my $calendar = $sa->extraction_strategy->calendar;
+	my $data = '';
+	my $table = SyllabusAnalyzer::Calendar::RenderHTMLTable->render($calendar);
+
+	template 'upload', { data => $data , table => $table };
+};
+
+
+
+
+true;
+
+__END__
+
+
 	my $data = <<EOF
 {
 		"prefix":"ICS starts here", 
@@ -231,12 +253,6 @@ my $table = <<EOF
 
 EOF
 ;
-
-
-	template 'upload', { data => $data , table => $table };
-};
-
-true;
 
 =head1 NAME
 

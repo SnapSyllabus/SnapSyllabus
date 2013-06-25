@@ -24,9 +24,6 @@ function EventList() {
 	$('div.first').replaceWith(re);
 }
 </script>
-</head>
-
-<body>
 
 <% table %>
 

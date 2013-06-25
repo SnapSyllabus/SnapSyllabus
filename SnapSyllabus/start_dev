@@ -1,2 +1,4 @@
 #!/bin/sh
+CURDIR=`dirname "$0"`
+cd "$CURDIR"
 plackup --port 8586 ./bin/app.pl

@@ -1,26 +1,23 @@
       <!-- Example row of columns -->
       <div class="row-fluid">
-      <form action="upload" method="POST">
-        <div class="span4">
-          <h2>Upload your syllabus</h2>
-          <p>Simply click the button below and choose the PDF, text document, or picture with the date and event information. </p>
-          <p><input type='file'></p>
-        </div>
-        <div class="span4">
-          <h2>Push the button below</h2>
-          <p>Wait a few moments while our magical code does its work.</p>
-		  <br>
-		  <input type="submit" value="Push this button" />
-       </div>
-	</form>
-        <div class="span4">
-          <h2>Your calendar is updated</h2>
-		  <p>It's just that easy.</p>
-		  	  		  
-		  		
-		   </div>
-		   <br>
-		   <br>
-		   <br>
-		   
-		  </div>
+          <form action="upload" method="post" enctype="multipart/form-data">
+              <div class="span4">
+                  <h2>Upload your syllabus</h2>
+                  <p>Simply click the button below and choose the PDF, text document, or picture with the date and event information.</p>
+                  <p><input type="file" name="upload"/></p>
+              </div>
+              <div class="span4">
+                  <h2>Push the button below</h2>
+                  <p>Wait a few moments while our magical code does its work.</p>
+                  <br>
+                  <input type="submit" value="Push this button" />
+              </div>
+          </form>
+          <div class="span4">
+              <h2>Your calendar is updated</h2>
+              <p>It's just that easy.</p>
+          </div>
+          <br>
+          <br>
+          <br>
+      </div>
