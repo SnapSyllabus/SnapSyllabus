@@ -1,0 +1,5 @@
+#!/bin/sh
+CURDIR=`dirname "$0"`
+cd "$CURDIR"
+export PLACK_ENV="development.local"
+plackup --port 8586 ./bin/app.pl
