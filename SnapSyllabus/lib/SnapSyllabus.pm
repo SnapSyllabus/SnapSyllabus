@@ -8,6 +8,8 @@ use SyllabusAnalyzer::Analyze;
 use SyllabusAnalyzer::Calendar::RenderHTMLTable;
 use SyllabusAnalyzer::Calendar::RenderICal;
 
+use strict;
+
 set 'session'      => 'Simple';
 set 'template'      => 'template_toolkit';
 set 'layout'      => 'main';
@@ -41,7 +43,7 @@ post '/upload' => sub {
 
 	my $cal_http = uri_for( '/cal/' . $uuid );
 	my $cal_webcal = uri_for( '/cal' . $uuid );
-	my $gcal_http = URI->new('https://www.google.com/calendar/render')
+	my $gcal_http = URI->new('https://www.google.com/calendar/render');
 	$gcal_http->query_form( cid => $cal_http );
 	$cal_webcal->scheme('webcal');
 
