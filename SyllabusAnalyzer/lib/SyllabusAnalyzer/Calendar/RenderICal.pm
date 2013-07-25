@@ -9,8 +9,18 @@ use Data::ICal::Entry::Event;
 use Encode qw/decode_utf8/;
 
 sub render {
-	my ($self, $calendar) = @_;
+	my ($self, $calendar, $options) = @_;
+
+	# properties
+	my $name = $options->{name} // "SnapSyllabus calendar";
+	my $desc = $options->{description} // $name;
+
 	my $ical = Data::ICal->new;
+	$ical->add_properties(
+		'X-WR-CALNAME' => $name,
+		'X-WR-CALDESC' => $desc,
+	);
+	use DDP; p $ical;
 	for my $day ($calendar->days) {
 		my $event = Data::ICal::Entry::Event->new();
 		my $info = join "\n",  @{ $calendar->get_info($day) };
