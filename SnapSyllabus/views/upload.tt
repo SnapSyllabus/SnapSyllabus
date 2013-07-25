@@ -33,8 +33,7 @@ function EventList() {
 
 <br/>
 <p style="margin: 0" align="center">
-<a class="button" href="https://www.google.com/calendar/render?tab=mc">Add to my calendar</a>
-<a class="button" href="<% google_calendar_uri %>">Add to my Google Calendar</a>
+<a class="button" target="_blank" href="<% google_calendar_uri %>">Add to my Google Calendar</a>
 <a class="button" href="<% cal_webcal_uri %>">CalDAV</a>
 <a class="button" href="<% cal_http_uri %>"">HTTP</a>
 </p>
