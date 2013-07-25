@@ -3,7 +3,6 @@ package SyllabusAnalyzer::Calendar;
 use strict;
 use warnings;
 use Moo;
-use Data::ICal::DateTime;
 use Tie::RefHash;
 
 has _events => ( is => 'rw', builder => 1 );
