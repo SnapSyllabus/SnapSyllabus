@@ -6,6 +6,7 @@ use Moo;
 
 use aliased 'SyllabusAnalyzer::Analyze' => 'Analyze';
 use aliased 'SyllabusAnalyzer::Calendar::RenderHTMLTable' => 'RenderHTMLTable';
+use aliased 'SyllabusAnalyzer::Calendar::RenderICal' => 'RenderICal';
 
 sub run {
 	my ($self, $args) = @_;
@@ -13,7 +14,7 @@ sub run {
 	die "can not read file $args->[0]" unless -r $args->[0];
 	my $analyzer = Analyze->new();
 	$analyzer->analyze_file($args->[0]);
-	print RenderHTMLTable->render($analyzer->calendar);
+	print RenderICal->render($analyzer->calendar);
 }
 
 1;
