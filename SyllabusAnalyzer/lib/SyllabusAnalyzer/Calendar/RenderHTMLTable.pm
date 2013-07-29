@@ -1,5 +1,6 @@
 package SyllabusAnalyzer::Calendar::RenderHTMLTable;
 
+use strict;
 use HTML::Table;
 use HTML::Entities;
 use DateTime::Format::Strptime;
@@ -9,11 +10,14 @@ my $dt_fmt = DateTime::Format::Strptime->new( pattern => '%Y&#8209;%m&#8209;%d' 
 
 sub render {
 	my ($self, $calendar) = @_;
-	my $html_table = HTML::Table->new( -border => 1 );
+	my $html_table = HTML::Table->new( -class=> 'table table-striped table-condensed table-hover' );
 	for my $day ($calendar->days) {
 		my $info = join "<br/>", map { encode_entities($_, '<>&') } @{ $calendar->get_info($day) };
 		$info =~ s,$,<br/>,mg;
-		$html_table->addRow($self->render_date($day), $info);
+		$html_table->addRow(
+			'<span class="event_dt">'.$self->render_date($day).'</span>',
+			'<span class="event_info">'.$info.'</span>'
+		);
 	}
 	decode_utf8($html_table->getTable);
 }
