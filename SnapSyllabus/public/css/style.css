@@ -1,18 +1,18 @@
 body {
-	background-color:#5EC7FF;
-	}
-table.majorLayout {
+}
+
+/*table.majorLayout {
 	background-color:FFFFFF;
 	vertical-align:center;
 	margin-left:auto;
 	margin-right:auto
-	}
+}
 	
 p.mainTitle {
 	font-family:'arial';
 	text-align:center;
 	font-size:200px
-	}
+}
 	
 table.tableContent {
 	font-family:'arial';
@@ -25,19 +25,26 @@ table.tableContent {
 	padding:5;
 	margin-left:auto;
 	margin-right:auto
-	}
+}
 	
 p.tableHeaderRow {
 	font-family:'arial';
 	text-align:center;
 	font-size:100px;
-
-	}
+}
 	
 a.linkStyle {
 	font-family:'arial';
 	font-size:50px;
 
-}	
+}*/
+
+.cal-actions {
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
 
 

@@ -1,43 +1,15 @@
-<script type="text/javascript">
-function load(url)
-{
-	window.open(url,"_self") ;
-}
+	<div class="cal-actions">
+		<a class="btn" target="_blank" href="<% google_calendar_uri %>">Add to my Google Calendar</a> 
+		<br/>
+		<a class="btn" href="<% cal_webcal_uri %>">CalDAV</a>
+		<a class="btn" href="<% cal_http_uri %>"">HTTP</a>
+	</div>
 
-function EventList() {
-	var data = <% data %>
+	<div class="inner first">
+	<% table %>
+	</div>
 
-	var re;
-	re += "<table border=1>";
-	var box = new Array();
-
-	for(x=0; x<data.EventData.length; x++)
-	{
-		re += "<tr>";
-		re += "<td>" +data.EventData[x].Text + "</td>";
-		re += "<td>" + data.EventData[x].Date + "</td>";
-		re += "<td><input value="true" type='checkbox' name='" + x + "'> </td>";
-		re += "</tr>";
-		box[x]=true;
-	}
-	re+= "</table>";
-	$('div.first').replaceWith(re);
-}
-</script>
-
-<% table %>
-
-<div class="container">
-	<div class="inner first"></div>
-</div>
-
-<br/>
-<p style="margin: 0" align="center">
-<a class="button" target="_blank" href="<% google_calendar_uri %>">Add to my Google Calendar</a>
-<a class="button" href="<% cal_webcal_uri %>">CalDAV</a>
-<a class="button" href="<% cal_http_uri %>"">HTTP</a>
-</p>
-
+<hr>
 
 <pre>
 <% ics %>

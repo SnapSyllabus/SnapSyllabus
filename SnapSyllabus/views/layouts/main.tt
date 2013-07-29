@@ -8,7 +8,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
         <style type="text/css">
             body {
                 padding-top: 20px;
@@ -104,16 +105,8 @@
     <body>
         <div class="container">
 
-            <!-- Cut here -->
-
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1><img width=300px src ="images/snap.png"</img></h1>
-            </div>
-
-            <hr>
-                <% content %>
-            <hr>
+	    <% content %>
+	    <hr>
 
             <!--This is where social media goes!!-->
             <div align="justify">

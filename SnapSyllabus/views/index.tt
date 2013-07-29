@@ -1,3 +1,6 @@
+      <% INCLUDE jumbotron.tt %>
+      <hr>
+
       <!-- Example row of columns -->
       <div class="row-fluid">
           <form action="upload" method="post" enctype="multipart/form-data">
