@@ -26,6 +26,7 @@ sub render {
 		my $info = join "\n",  @{ $calendar->get_info($day) };
 		$event->add_properties( summary => $info );
 		$event->start($day);
+		$event->all_day(1);
 		$ical->add_entry($event);
 	}
 	decode_utf8($ical->as_string);
